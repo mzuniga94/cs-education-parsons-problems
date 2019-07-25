@@ -24,3 +24,5 @@ Tip: Type cd cs- then press TAB to autocomplete in your terminal.
 It will serve on 127.0.0.1:5000
 6) Open an internet browser and navigate to 127.0.0.1:5000
 7) Voila! You are now on the web application!
+
+This is my first commit.
