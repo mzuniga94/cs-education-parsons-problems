@@ -27,7 +27,7 @@ def index():
     -------------------------------------------  -------------------------------------------
     @app.route() is a decorator which changes the behavior of the index() function.
     @methods=["GET"] are the types of REST requests that the function takes. In this case, we only use GET which fetches resources.
-     -------------------------------------------  -------------------------------------------
+    -------------------------------------------  -------------------------------------------
     @function index(): Renders index.html
     @params: none
     @returns: Renders index.html with two arguments for showing Jinja2 dynamic JavaScript.
@@ -44,6 +44,16 @@ def problem1():
     -------------------------------------------  -------------------------------------------
     """
     return flask.render_template('problem1.html')
+
+@app.route('/contact.html/', methods=["GET"])
+def contact():
+    """
+    @function problem1(): Renders contact.html
+    @params: none
+    @returns: Renders contact.html.
+    -------------------------------------------  -------------------------------------------
+    """
+    return flask.render_template('contact.html')
 
 @app.after_request
 def add_header(resp):
